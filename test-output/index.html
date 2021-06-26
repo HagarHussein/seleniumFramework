@@ -1,0 +1,2446 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 12 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\hagar.elsayed\git\seleniumFramework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">73 methods, 12 failed,  7 skipped,  54 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NUniqueEmail" class="method navigator-link" hash-for-method="precondition">precondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.PosTest" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdLimit" class="method navigator-link" hash-for-method="verifySuccessfulRegisteration">verifySuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNnchar" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameLnameNEqual" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NLnameVal" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameVal" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NUniqueName" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNsc" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNlc" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameLnameWrong" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNuc" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NUniqueEmail" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.PosTest" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.PosTest" class="method navigator-link" hash-for-method="setLoginCredintials">setLoginCredintials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NUniqueEmail" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.PosTest" class="method navigator-link" hash-for-method="validateSuccessfulLogin">validateSuccessfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.PosTest" class="method navigator-link" hash-for-method="verifySuccessfulRegisteration">verifySuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NUniqueEmail" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameVal" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailEmp" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NLnameEmp" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal1" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdLimit" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal4" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailPwdWrong" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdEmp" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal2" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NUniqueName" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameLnameWrong" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.PosTest" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NLnameVal" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameEmp" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNuc" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNsc" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNlc" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNMatch" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPhoneEmp" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNnchar" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameLnameNEqual" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal3" class="method navigator-link" hash-for-method="enterRegisterationPage">enterRegisterationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNsc" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NLnameEmp" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdLimit" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailPwdWrong" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NLnameVal" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameVal" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameLnameNEqual" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal1" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdEmp" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal4" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNlc" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNMatch" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNnchar" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal2" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal3" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameEmp" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailEmp" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameLnameWrong" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NUniqueName" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNuc" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPhoneEmp" class="method navigator-link" hash-for-method="setNewUserData">setNewUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NFnameEmp" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal1" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal2" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdNMatch" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal3" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPhoneEmp" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailEmp" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NPwdEmp" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NLnameEmp" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailVal4" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="completeScenarios.NEmailPwdWrong" class="method navigator-link" hash-for-method="verifyUnSuccessfulRegisteration">verifyUnSuccessfulRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NFnameLnameNEqual</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NFnameLnameNEqual.verifyUnSuccessfulRegisteration(NFnameLnameNEqual.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NPwdNlc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NPwdNlc.verifyUnSuccessfulRegisteration(NPwdNlc.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NPwdLimit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfulRegisteration">
+                  </a> <!-- verifySuccessfulRegisteration -->
+                  <span class="method-name">verifySuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [My Account] but found [Register]
+	at completeScenarios.NPwdLimit.verifySuccessfulRegisteration(NPwdLimit.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NLnameVal</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NLnameVal.verifyUnSuccessfulRegisteration(NLnameVal.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NPwdNsc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NPwdNsc.verifyUnSuccessfulRegisteration(NPwdNsc.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NPwdNuc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NPwdNuc.verifyUnSuccessfulRegisteration(NPwdNuc.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.PosTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [My Account] but found [Register]
+	at completeScenarios.PosTest.setNewUserData(PosTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NUniqueName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NUniqueName.verifyUnSuccessfulRegisteration(NUniqueName.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NFnameVal</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NFnameVal.verifyUnSuccessfulRegisteration(NFnameVal.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NUniqueEmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="precondition">
+                  </a> <!-- precondition -->
+                  <span class="method-name">precondition</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [My Account] but found [Register]
+	at completeScenarios.NUniqueEmail.precondition(NUniqueEmail.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NFnameLnameWrong</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NFnameLnameWrong.verifyUnSuccessfulRegisteration(NFnameLnameWrong.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">completeScenarios.NPwdNnchar</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NPwdNnchar.verifyUnSuccessfulRegisteration(NPwdNnchar.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">completeScenarios.NUniqueEmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method NUniqueEmail.enterRegisterationPage()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                  <div class="stack-trace">java.lang.Throwable: Method NUniqueEmail.setNewUserData()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.Throwable: Method NUniqueEmail.verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">completeScenarios.PosTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <div class="stack-trace">java.lang.Throwable: Method PosTest.logout()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setLoginCredintials">
+                  </a> <!-- setLoginCredintials -->
+                  <span class="method-name">setLoginCredintials</span>
+                  <div class="stack-trace">java.lang.Throwable: Method PosTest.setLoginCredintials()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSuccessfulLogin">
+                  </a> <!-- validateSuccessfulLogin -->
+                  <span class="method-name">validateSuccessfulLogin</span>
+                  <div class="stack-trace">java.lang.Throwable: Method PosTest.validateSuccessfulLogin()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfulRegisteration">
+                  </a> <!-- verifySuccessfulRegisteration -->
+                  <span class="method-name">verifySuccessfulRegisteration</span>
+                  <div class="stack-trace">java.lang.Throwable: Method PosTest.verifySuccessfulRegisteration()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NEmailPwdWrong</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NEmailVal3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NFnameLnameNEqual</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NPwdNlc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NEmailEmp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NPwdLimit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NEmailVal1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NFnameEmp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NLnameVal</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NPwdEmp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NPwdNsc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NEmailVal4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NPwdNuc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NUniqueName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.PosTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NFnameVal</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NEmailVal2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NPhoneEmp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NFnameLnameWrong</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NPwdNnchar</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NLnameEmp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">completeScenarios.NPwdNMatch</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRegisterationPage">
+                  </a> <!-- enterRegisterationPage -->
+                  <span class="method-name">enterRegisterationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setNewUserData">
+                  </a> <!-- setNewUserData -->
+                  <span class="method-name">setNewUserData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulRegisteration">
+                  </a> <!-- verifyUnSuccessfulRegisteration -->
+                  <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\hagar.elsayed\git\seleniumFramework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;completeScenarios.PosTest&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NUniqueEmail&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NEmailVal1&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NFnameVal&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NEmailVal2&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NEmailVal3&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NEmailVal4&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NUniqueName&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NPwdNsc&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NPwdNnchar&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NFnameLnameNEqual&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NPwdNuc&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NEmailPwdWrong&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NPwdNlc&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NLnameVal&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NPwdEmp&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NPhoneEmp&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NEmailEmp&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NFnameLnameWrong&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NPwdLimit&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NPwdNMatch&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NLnameEmp&quot;/&gt;
+      &lt;class name=&quot;completeScenarios.NFnameEmp&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (23 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(73);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'precondition')
+data.setCell(0, 2, 'completeScenarios.NUniqueEmail')
+data.setCell(0, 3, 6816);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'setNewUserData')
+data.setCell(1, 2, 'completeScenarios.PosTest')
+data.setCell(1, 3, 5674);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'setNewUserData')
+data.setCell(2, 2, 'completeScenarios.NEmailVal4')
+data.setCell(2, 3, 5568);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'setNewUserData')
+data.setCell(3, 2, 'completeScenarios.NEmailVal3')
+data.setCell(3, 3, 5567);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'setNewUserData')
+data.setCell(4, 2, 'completeScenarios.NEmailVal1')
+data.setCell(4, 3, 5564);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'setNewUserData')
+data.setCell(5, 2, 'completeScenarios.NPwdNMatch')
+data.setCell(5, 3, 5552);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'setNewUserData')
+data.setCell(6, 2, 'completeScenarios.NFnameEmp')
+data.setCell(6, 3, 5547);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'setNewUserData')
+data.setCell(7, 2, 'completeScenarios.NPwdLimit')
+data.setCell(7, 3, 5546);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'setNewUserData')
+data.setCell(8, 2, 'completeScenarios.NEmailVal2')
+data.setCell(8, 3, 5545);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'setNewUserData')
+data.setCell(9, 2, 'completeScenarios.NPhoneEmp')
+data.setCell(9, 3, 5544);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'setNewUserData')
+data.setCell(10, 2, 'completeScenarios.NEmailEmp')
+data.setCell(10, 3, 5539);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'setNewUserData')
+data.setCell(11, 2, 'completeScenarios.NPwdEmp')
+data.setCell(11, 3, 5531);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'setNewUserData')
+data.setCell(12, 2, 'completeScenarios.NLnameEmp')
+data.setCell(12, 3, 5528);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'setNewUserData')
+data.setCell(13, 2, 'completeScenarios.NEmailPwdWrong')
+data.setCell(13, 3, 5525);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'setNewUserData')
+data.setCell(14, 2, 'completeScenarios.NUniqueName')
+data.setCell(14, 3, 2396);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'setNewUserData')
+data.setCell(15, 2, 'completeScenarios.NPwdNnchar')
+data.setCell(15, 3, 2340);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'setNewUserData')
+data.setCell(16, 2, 'completeScenarios.NFnameLnameNEqual')
+data.setCell(16, 3, 2319);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'setNewUserData')
+data.setCell(17, 2, 'completeScenarios.NFnameVal')
+data.setCell(17, 3, 2156);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'setNewUserData')
+data.setCell(18, 2, 'completeScenarios.NFnameLnameWrong')
+data.setCell(18, 3, 1975);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'enterRegisterationPage')
+data.setCell(19, 2, 'completeScenarios.NPwdNuc')
+data.setCell(19, 3, 1905);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'setNewUserData')
+data.setCell(20, 2, 'completeScenarios.NPwdNsc')
+data.setCell(20, 3, 1879);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'setNewUserData')
+data.setCell(21, 2, 'completeScenarios.NPwdNuc')
+data.setCell(21, 3, 1874);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'setNewUserData')
+data.setCell(22, 2, 'completeScenarios.NLnameVal')
+data.setCell(22, 3, 1815);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'setNewUserData')
+data.setCell(23, 2, 'completeScenarios.NPwdNlc')
+data.setCell(23, 3, 1650);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'enterRegisterationPage')
+data.setCell(24, 2, 'completeScenarios.NPhoneEmp')
+data.setCell(24, 3, 1449);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'enterRegisterationPage')
+data.setCell(25, 2, 'completeScenarios.NUniqueName')
+data.setCell(25, 3, 1427);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'enterRegisterationPage')
+data.setCell(26, 2, 'completeScenarios.NPwdEmp')
+data.setCell(26, 3, 1420);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'enterRegisterationPage')
+data.setCell(27, 2, 'completeScenarios.NPwdNsc')
+data.setCell(27, 3, 1402);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'enterRegisterationPage')
+data.setCell(28, 2, 'completeScenarios.NPwdNMatch')
+data.setCell(28, 3, 1392);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'enterRegisterationPage')
+data.setCell(29, 2, 'completeScenarios.NEmailVal3')
+data.setCell(29, 3, 1332);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'enterRegisterationPage')
+data.setCell(30, 2, 'completeScenarios.NFnameLnameNEqual')
+data.setCell(30, 3, 1276);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'enterRegisterationPage')
+data.setCell(31, 2, 'completeScenarios.NLnameVal')
+data.setCell(31, 3, 1267);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'enterRegisterationPage')
+data.setCell(32, 2, 'completeScenarios.PosTest')
+data.setCell(32, 3, 1071);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'enterRegisterationPage')
+data.setCell(33, 2, 'completeScenarios.NEmailVal2')
+data.setCell(33, 3, 1011);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'enterRegisterationPage')
+data.setCell(34, 2, 'completeScenarios.NEmailVal1')
+data.setCell(34, 3, 970);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'enterRegisterationPage')
+data.setCell(35, 2, 'completeScenarios.NFnameLnameWrong')
+data.setCell(35, 3, 967);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'enterRegisterationPage')
+data.setCell(36, 2, 'completeScenarios.NLnameEmp')
+data.setCell(36, 3, 956);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'enterRegisterationPage')
+data.setCell(37, 2, 'completeScenarios.NEmailEmp')
+data.setCell(37, 3, 951);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'enterRegisterationPage')
+data.setCell(38, 2, 'completeScenarios.NEmailPwdWrong')
+data.setCell(38, 3, 948);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'enterRegisterationPage')
+data.setCell(39, 2, 'completeScenarios.NPwdLimit')
+data.setCell(39, 3, 937);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'enterRegisterationPage')
+data.setCell(40, 2, 'completeScenarios.NEmailVal4')
+data.setCell(40, 3, 935);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'enterRegisterationPage')
+data.setCell(41, 2, 'completeScenarios.NPwdNnchar')
+data.setCell(41, 3, 928);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'enterRegisterationPage')
+data.setCell(42, 2, 'completeScenarios.NFnameEmp')
+data.setCell(42, 3, 922);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'enterRegisterationPage')
+data.setCell(43, 2, 'completeScenarios.NFnameVal')
+data.setCell(43, 3, 909);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'enterRegisterationPage')
+data.setCell(44, 2, 'completeScenarios.NPwdNlc')
+data.setCell(44, 3, 909);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(45, 2, 'completeScenarios.NPwdNMatch')
+data.setCell(45, 3, 26);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(46, 2, 'completeScenarios.NEmailVal2')
+data.setCell(46, 3, 23);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(47, 2, 'completeScenarios.NEmailVal4')
+data.setCell(47, 3, 22);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(48, 2, 'completeScenarios.NEmailVal3')
+data.setCell(48, 3, 21);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(49, 2, 'completeScenarios.NEmailPwdWrong')
+data.setCell(49, 3, 8);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(50, 2, 'completeScenarios.NFnameVal')
+data.setCell(50, 3, 7);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(51, 2, 'completeScenarios.NFnameLnameWrong')
+data.setCell(51, 3, 6);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(52, 2, 'completeScenarios.NFnameEmp')
+data.setCell(52, 3, 5);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(53, 2, 'completeScenarios.NEmailVal1')
+data.setCell(53, 3, 5);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(54, 2, 'completeScenarios.NPwdEmp')
+data.setCell(54, 3, 5);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(55, 2, 'completeScenarios.NLnameEmp')
+data.setCell(55, 3, 5);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(56, 2, 'completeScenarios.NFnameLnameNEqual')
+data.setCell(56, 3, 5);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(57, 2, 'completeScenarios.NUniqueName')
+data.setCell(57, 3, 5);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(58, 2, 'completeScenarios.NPwdNsc')
+data.setCell(58, 3, 5);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(59, 2, 'completeScenarios.NPhoneEmp')
+data.setCell(59, 3, 4);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(60, 2, 'completeScenarios.NEmailEmp')
+data.setCell(60, 3, 4);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(61, 2, 'completeScenarios.NPwdNnchar')
+data.setCell(61, 3, 4);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'verifySuccessfulRegisteration')
+data.setCell(62, 2, 'completeScenarios.NPwdLimit')
+data.setCell(62, 3, 4);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(63, 2, 'completeScenarios.NPwdNlc')
+data.setCell(63, 3, 4);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(64, 2, 'completeScenarios.NPwdNuc')
+data.setCell(64, 3, 4);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(65, 2, 'completeScenarios.NLnameVal')
+data.setCell(65, 3, 3);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'verifyUnSuccessfulRegisteration')
+data.setCell(66, 2, 'completeScenarios.NUniqueEmail')
+data.setCell(66, 3, 0);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'verifySuccessfulRegisteration')
+data.setCell(67, 2, 'completeScenarios.PosTest')
+data.setCell(67, 3, 0);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'setNewUserData')
+data.setCell(68, 2, 'completeScenarios.NUniqueEmail')
+data.setCell(68, 3, 0);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'setLoginCredintials')
+data.setCell(69, 2, 'completeScenarios.PosTest')
+data.setCell(69, 3, 0);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'logout')
+data.setCell(70, 2, 'completeScenarios.PosTest')
+data.setCell(70, 3, 0);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'enterRegisterationPage')
+data.setCell(71, 2, 'completeScenarios.NUniqueEmail')
+data.setCell(71, 3, 0);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'validateSuccessfulLogin')
+data.setCell(72, 2, 'completeScenarios.PosTest')
+data.setCell(72, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.PosTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">7857 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">7894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">9063 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySuccessfulRegisteration</span>
+                <span class="method-start">14927 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">14931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setLoginCredintials</span>
+                <span class="method-start">14935 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateSuccessfulLogin</span>
+                <span class="method-start">14938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">14942 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NUniqueEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">15593 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">24382 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">precondition</span>
+                <span class="method-start">24383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">31343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">31346 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">31352 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">31355 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NEmailVal1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">32003 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">39052 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">39054 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">40026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">45592 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">45599 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NFnameVal</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">46243 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">53038 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">53039 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">53950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">56108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">56319 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NEmailVal2</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">56968 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">63564 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">63565 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">64579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">70126 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">70150 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NEmailVal3</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">70782 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">80369 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">80371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">81705 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">87275 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">87298 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NEmailVal4</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">87909 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">95523 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">95524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">96461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">102030 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">102056 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NUniqueName</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">102686 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">109610 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">109612 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">111041 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">113438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">113563 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NPwdNsc</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">114188 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">120772 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">120773 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">122177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">124059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">124198 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NPwdNnchar</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">124852 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">133769 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">133771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">134701 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">137043 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">137160 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NFnameLnameNEqual</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">137786 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">144479 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">144480 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">145758 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">148078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">148201 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NPwdNuc</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">148836 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">155792 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">155793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">157700 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">159576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">159711 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NEmailPwdWrong</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">160347 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">166828 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">166829 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">167778 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">173304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">173315 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NPwdNlc</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">173945 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">180901 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">180902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">181813 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">183465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">183586 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NLnameVal</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">184208 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">190802 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">190803 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">192072 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">193889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">194005 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NPwdEmp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">194643 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">201957 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">201958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">203379 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">208912 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">208920 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NPhoneEmp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">209553 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">216325 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">216327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">217778 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">223324 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">223330 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NEmailEmp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">223955 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">231421 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">231422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">232375 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">237915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">237921 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NFnameLnameWrong</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">238554 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">245167 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">245168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">246137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">248116 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">248245 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NPwdLimit</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">248871 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">255603 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">255604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">256543 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySuccessfulRegisteration</span>
+                <span class="method-start">262091 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">262252 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NPwdNMatch</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">262877 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">270360 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">270361 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">271755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">277311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">277338 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NLnameEmp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">277969 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">285316 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">285317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">286274 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">291803 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">291809 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">completeScenarios.NFnameEmp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">292452 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initJsonReader</span>
+                <span class="method-start">301148 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enterRegisterationPage</span>
+                <span class="method-start">301149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setNewUserData</span>
+                <span class="method-start">302073 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUnSuccessfulRegisteration</span>
+                <span class="method-start">307621 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">307628 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -3,7 +3,207 @@
 	"firstname" : "Hagar",
 	"lastname" : "Elsayed",
 	"phone" : "01111111111",
-	"email" : "lollaaa@test.com",
-	"password" : "Aa123456"
+	"email" : "test1@gmail.com",
+	"password" : "Aa123456!",
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test2@gmail.com",
+	"password" : "Aa123456!",
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test3@gmail.com",
+	"password" : "Aa123456!",
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "elsayed",
+	"phone" : "01111111111",
+	"email" : "test4@gmail.com",
+	"password" : "Aa123456!",
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Hagar",
+	"phone" : "01111111111",
+	"email" : "test5@gmail.com",
+	"password" : "Aa123456!",
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test6@gmail.com",
+	"password" : "hhhhhhh!",
+	"confirm_password" :"hhhhhhh!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test7@gmail.com",
+	"password" : "HHHHHHH!",
+	"confirm_password" :"HHHHHHH!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test8@gmail.com",
+	"password" : "HHHHhhhh",
+	"confirm_password" :"HHHHhhhh"
+}
+,
+
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test9@gmail.com",
+	"password" : "123456789",
+	"confirm_password" :"123456789"
+}
+,
+{
+	"firstname" : "",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test10@gmail.com",
+	"password" : "Aa123456!",
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "",
+	"phone" : "01111111111",
+	"email" : "test11@gmail.com",
+	"password" : "Aa123456!",
+	"confirm_password" : "Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "",
+	"password" : "Aa123456!",
+	"confirm_password" : "Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test13@gmail.com",
+	"password" : "",
+	"confirm_password" : "Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test14@gmail.com",
+	"password" : "Hh!",
+	"confirm_password" : "Hh!"
+}
+,
+{
+	"firstname" : "hagar",
+	"lastname" : "elsayed",
+	"phone" : "01111111111",
+	"email" : "test15@gmail.com",
+	"password" : "Aa123456!",
+	"confirm_password" : "Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test16gmail.com",
+	"password" : "Aa123456",
+	"confirm_password" : "Aa123456"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test17@gmail.com",
+	"password" : "Aa123456!"
+	"confirm_password" :"Aa1345!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test18@outlook.com",
+	"password" : "Aa123456!"
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test19@gmail",
+	"password" : "Aa123456!"
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "test20gmail.com",
+	"password" : "Aa123456!"
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "01111111111",
+	"email" : "@gmail.com",
+	"password" : "Aa123456!"
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "New",
+	"lastname" : "Name",
+	"phone" : "01111111111",
+	"email" : "test22@gmail.com",
+	"password" : "Aa123456!"
+	"confirm_password" :"Aa123456!"
+}
+,
+{
+	"firstname" : "Hagar",
+	"lastname" : "Elsayed",
+	"phone" : "",
+	"email" : "test23@gmail.com",
+	"password" : "Aa123456!",
+	"confirm_password" : "Aa123456!"
 }
 ]

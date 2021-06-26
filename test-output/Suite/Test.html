@@ -1,0 +1,1089 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>54/12/7</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jun 26 23:46:03 EET 2021</td>
+</tr>
+<tr><td>Total time:</td><td>308 seconds (308316 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='completeScenarios.NUniqueEmail.precondition()'><b>precondition</b><br>Test class: completeScenarios.NUniqueEmail</td>
+<td><div><pre>java.lang.AssertionError: expected [My Account] but found [Register]
+	at completeScenarios.NUniqueEmail.precondition(NUniqueEmail.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace733419479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace733419479'><pre>java.lang.AssertionError: expected [My Account] but found [Register]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NUniqueEmail.precondition(NUniqueEmail.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>completeScenarios.NUniqueEmail@345cf395</td></tr>
+<tr>
+<td title='completeScenarios.PosTest.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.PosTest</td>
+<td><div><pre>java.lang.AssertionError: expected [My Account] but found [Register]
+	at completeScenarios.PosTest.setNewUserData(PosTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1363296771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1363296771'><pre>java.lang.AssertionError: expected [My Account] but found [Register]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.PosTest.setNewUserData(PosTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>completeScenarios.PosTest@1c504e66</td></tr>
+<tr>
+<td title='completeScenarios.NPwdLimit.verifySuccessfulRegisteration()'><b>verifySuccessfulRegisteration</b><br>Test class: completeScenarios.NPwdLimit</td>
+<td><div><pre>java.lang.AssertionError: expected [My Account] but found [Register]
+	at completeScenarios.NPwdLimit.verifySuccessfulRegisteration(NPwdLimit.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1313605024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1313605024'><pre>java.lang.AssertionError: expected [My Account] but found [Register]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NPwdLimit.verifySuccessfulRegisteration(NPwdLimit.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NPwdLimit@4d774249</td></tr>
+<tr>
+<td title='completeScenarios.NFnameVal.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NFnameVal</td>
+<td><div><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NFnameVal.verifyUnSuccessfulRegisteration(NFnameVal.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1850834078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850834078'><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NFnameVal.verifyUnSuccessfulRegisteration(NFnameVal.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NFnameVal@3c6aa04a</td></tr>
+<tr>
+<td title='completeScenarios.NUniqueName.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NUniqueName</td>
+<td><div><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NUniqueName.verifyUnSuccessfulRegisteration(NUniqueName.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace594233924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace594233924'><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NUniqueName.verifyUnSuccessfulRegisteration(NUniqueName.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NUniqueName@35835e65</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNsc.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NPwdNsc</td>
+<td><div><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NPwdNsc.verifyUnSuccessfulRegisteration(NPwdNsc.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1221795109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1221795109'><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NPwdNsc.verifyUnSuccessfulRegisteration(NPwdNsc.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NPwdNsc@289fdb08</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNnchar.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NPwdNnchar</td>
+<td><div><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NPwdNnchar.verifyUnSuccessfulRegisteration(NPwdNnchar.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1088287545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1088287545'><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NPwdNnchar.verifyUnSuccessfulRegisteration(NPwdNnchar.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NPwdNnchar@7a231dfd</td></tr>
+<tr>
+<td title='completeScenarios.NFnameLnameNEqual.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NFnameLnameNEqual</td>
+<td><div><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NFnameLnameNEqual.verifyUnSuccessfulRegisteration(NFnameLnameNEqual.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace207766759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace207766759'><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NFnameLnameNEqual.verifyUnSuccessfulRegisteration(NFnameLnameNEqual.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NFnameLnameNEqual@30814f43</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNuc.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NPwdNuc</td>
+<td><div><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NPwdNuc.verifyUnSuccessfulRegisteration(NPwdNuc.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1593965404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1593965404'><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NPwdNuc.verifyUnSuccessfulRegisteration(NPwdNuc.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NPwdNuc@1fde4f40</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNlc.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NPwdNlc</td>
+<td><div><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NPwdNlc.verifyUnSuccessfulRegisteration(NPwdNlc.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1559037239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1559037239'><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NPwdNlc.verifyUnSuccessfulRegisteration(NPwdNlc.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NPwdNlc@2b61a019</td></tr>
+<tr>
+<td title='completeScenarios.NLnameVal.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NLnameVal</td>
+<td><div><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NLnameVal.verifyUnSuccessfulRegisteration(NLnameVal.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1137350304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1137350304'><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NLnameVal.verifyUnSuccessfulRegisteration(NLnameVal.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NLnameVal@11a00961</td></tr>
+<tr>
+<td title='completeScenarios.NFnameLnameWrong.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NFnameLnameWrong</td>
+<td><div><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at completeScenarios.NFnameLnameWrong.verifyUnSuccessfulRegisteration(NFnameLnameWrong.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace933960464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace933960464'><pre>java.lang.AssertionError: expected [Register] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at completeScenarios.NFnameLnameWrong.verifyUnSuccessfulRegisteration(NFnameLnameWrong.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NFnameLnameWrong@7e2f86e6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='completeScenarios.PosTest.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.PosTest</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.PosTest@1c504e66</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal1.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NEmailVal1</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailVal1@bc4d5e1</td></tr>
+<tr>
+<td title='completeScenarios.NFnameVal.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NFnameVal</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NFnameVal@3c6aa04a</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal2.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NEmailVal2</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NEmailVal2@2257fadf</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal3.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NEmailVal3</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NEmailVal3@7144655b</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal4.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NEmailVal4</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailVal4@5c82cd4f</td></tr>
+<tr>
+<td title='completeScenarios.NUniqueName.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NUniqueName</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NUniqueName@35835e65</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNsc.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NPwdNsc</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NPwdNsc@289fdb08</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNnchar.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NPwdNnchar</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NPwdNnchar@7a231dfd</td></tr>
+<tr>
+<td title='completeScenarios.NFnameLnameNEqual.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NFnameLnameNEqual</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NFnameLnameNEqual@30814f43</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNuc.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NPwdNuc</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NPwdNuc@1fde4f40</td></tr>
+<tr>
+<td title='completeScenarios.NEmailPwdWrong.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NEmailPwdWrong</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailPwdWrong@49cf9028</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNlc.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NPwdNlc</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NPwdNlc@2b61a019</td></tr>
+<tr>
+<td title='completeScenarios.NLnameVal.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NLnameVal</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NLnameVal@11a00961</td></tr>
+<tr>
+<td title='completeScenarios.NPwdEmp.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NPwdEmp</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NPwdEmp@7ce9e05a</td></tr>
+<tr>
+<td title='completeScenarios.NPhoneEmp.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NPhoneEmp</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NPhoneEmp@4992613f</td></tr>
+<tr>
+<td title='completeScenarios.NEmailEmp.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NEmailEmp</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailEmp@6fd5717c</td></tr>
+<tr>
+<td title='completeScenarios.NFnameLnameWrong.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NFnameLnameWrong</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NFnameLnameWrong@7e2f86e6</td></tr>
+<tr>
+<td title='completeScenarios.NPwdLimit.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NPwdLimit</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NPwdLimit@4d774249</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNMatch.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NPwdNMatch</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NPwdNMatch@17b64941</td></tr>
+<tr>
+<td title='completeScenarios.NLnameEmp.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NLnameEmp</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NLnameEmp@53ac845a</td></tr>
+<tr>
+<td title='completeScenarios.NFnameEmp.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NFnameEmp</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NFnameEmp@5136207f</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal1.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NEmailVal1</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NEmailVal1@bc4d5e1</td></tr>
+<tr>
+<td title='completeScenarios.NFnameVal.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NFnameVal</td>
+<td></td>
+<td>2</td>
+<td>completeScenarios.NFnameVal@3c6aa04a</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal2.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NEmailVal2</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NEmailVal2@2257fadf</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal3.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NEmailVal3</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NEmailVal3@7144655b</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal4.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NEmailVal4</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NEmailVal4@5c82cd4f</td></tr>
+<tr>
+<td title='completeScenarios.NUniqueName.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NUniqueName</td>
+<td></td>
+<td>2</td>
+<td>completeScenarios.NUniqueName@35835e65</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNsc.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NPwdNsc</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NPwdNsc@289fdb08</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNnchar.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NPwdNnchar</td>
+<td></td>
+<td>2</td>
+<td>completeScenarios.NPwdNnchar@7a231dfd</td></tr>
+<tr>
+<td title='completeScenarios.NFnameLnameNEqual.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NFnameLnameNEqual</td>
+<td></td>
+<td>2</td>
+<td>completeScenarios.NFnameLnameNEqual@30814f43</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNuc.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NPwdNuc</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NPwdNuc@1fde4f40</td></tr>
+<tr>
+<td title='completeScenarios.NEmailPwdWrong.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NEmailPwdWrong</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NEmailPwdWrong@49cf9028</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNlc.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NPwdNlc</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NPwdNlc@2b61a019</td></tr>
+<tr>
+<td title='completeScenarios.NLnameVal.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NLnameVal</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NLnameVal@11a00961</td></tr>
+<tr>
+<td title='completeScenarios.NPwdEmp.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NPwdEmp</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NPwdEmp@7ce9e05a</td></tr>
+<tr>
+<td title='completeScenarios.NPhoneEmp.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NPhoneEmp</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NPhoneEmp@4992613f</td></tr>
+<tr>
+<td title='completeScenarios.NEmailEmp.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NEmailEmp</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NEmailEmp@6fd5717c</td></tr>
+<tr>
+<td title='completeScenarios.NFnameLnameWrong.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NFnameLnameWrong</td>
+<td></td>
+<td>1</td>
+<td>completeScenarios.NFnameLnameWrong@7e2f86e6</td></tr>
+<tr>
+<td title='completeScenarios.NPwdLimit.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NPwdLimit</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NPwdLimit@4d774249</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNMatch.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NPwdNMatch</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NPwdNMatch@17b64941</td></tr>
+<tr>
+<td title='completeScenarios.NLnameEmp.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NLnameEmp</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NLnameEmp@53ac845a</td></tr>
+<tr>
+<td title='completeScenarios.NFnameEmp.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NFnameEmp</td>
+<td></td>
+<td>5</td>
+<td>completeScenarios.NFnameEmp@5136207f</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal1.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NEmailVal1</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailVal1@bc4d5e1</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal2.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NEmailVal2</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailVal2@2257fadf</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal3.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NEmailVal3</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailVal3@7144655b</td></tr>
+<tr>
+<td title='completeScenarios.NEmailVal4.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NEmailVal4</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailVal4@5c82cd4f</td></tr>
+<tr>
+<td title='completeScenarios.NEmailPwdWrong.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NEmailPwdWrong</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailPwdWrong@49cf9028</td></tr>
+<tr>
+<td title='completeScenarios.NPwdEmp.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NPwdEmp</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NPwdEmp@7ce9e05a</td></tr>
+<tr>
+<td title='completeScenarios.NPhoneEmp.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NPhoneEmp</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NPhoneEmp@4992613f</td></tr>
+<tr>
+<td title='completeScenarios.NEmailEmp.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NEmailEmp</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NEmailEmp@6fd5717c</td></tr>
+<tr>
+<td title='completeScenarios.NPwdNMatch.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NPwdNMatch</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NPwdNMatch@17b64941</td></tr>
+<tr>
+<td title='completeScenarios.NLnameEmp.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NLnameEmp</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NLnameEmp@53ac845a</td></tr>
+<tr>
+<td title='completeScenarios.NFnameEmp.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NFnameEmp</td>
+<td></td>
+<td>0</td>
+<td>completeScenarios.NFnameEmp@5136207f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='completeScenarios.NUniqueEmail.enterRegisterationPage()'><b>enterRegisterationPage</b><br>Test class: completeScenarios.NUniqueEmail</td>
+<td><div><pre>java.lang.Throwable: Method NUniqueEmail.enterRegisterationPage()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1629595613", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1629595613'><pre>java.lang.Throwable: Method NUniqueEmail.enterRegisterationPage()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NUniqueEmail@345cf395</td></tr>
+<tr>
+<td title='completeScenarios.PosTest.logout()'><b>logout</b><br>Test class: completeScenarios.PosTest</td>
+<td><div><pre>java.lang.Throwable: Method PosTest.logout()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace371037638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace371037638'><pre>java.lang.Throwable: Method PosTest.logout()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.PosTest@1c504e66</td></tr>
+<tr>
+<td title='completeScenarios.PosTest.setLoginCredintials()'><b>setLoginCredintials</b><br>Test class: completeScenarios.PosTest</td>
+<td><div><pre>java.lang.Throwable: Method PosTest.setLoginCredintials()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1134505351", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1134505351'><pre>java.lang.Throwable: Method PosTest.setLoginCredintials()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.PosTest@1c504e66</td></tr>
+<tr>
+<td title='completeScenarios.NUniqueEmail.setNewUserData()'><b>setNewUserData</b><br>Test class: completeScenarios.NUniqueEmail</td>
+<td><div><pre>java.lang.Throwable: Method NUniqueEmail.setNewUserData()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace582495711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace582495711'><pre>java.lang.Throwable: Method NUniqueEmail.setNewUserData()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NUniqueEmail@345cf395</td></tr>
+<tr>
+<td title='completeScenarios.PosTest.validateSuccessfulLogin()'><b>validateSuccessfulLogin</b><br>Test class: completeScenarios.PosTest</td>
+<td><div><pre>java.lang.Throwable: Method PosTest.validateSuccessfulLogin()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace139653005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace139653005'><pre>java.lang.Throwable: Method PosTest.validateSuccessfulLogin()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.PosTest@1c504e66</td></tr>
+<tr>
+<td title='completeScenarios.PosTest.verifySuccessfulRegisteration()'><b>verifySuccessfulRegisteration</b><br>Test class: completeScenarios.PosTest</td>
+<td><div><pre>java.lang.Throwable: Method PosTest.verifySuccessfulRegisteration()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1880891962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1880891962'><pre>java.lang.Throwable: Method PosTest.verifySuccessfulRegisteration()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.PosTest@1c504e66</td></tr>
+<tr>
+<td title='completeScenarios.NUniqueEmail.verifyUnSuccessfulRegisteration()'><b>verifyUnSuccessfulRegisteration</b><br>Test class: completeScenarios.NUniqueEmail</td>
+<td><div><pre>java.lang.Throwable: Method NUniqueEmail.verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1154275164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1154275164'><pre>java.lang.Throwable: Method NUniqueEmail.verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>completeScenarios.NUniqueEmail@345cf395</td></tr>
+</table><p>
+</body>
+</html>

@@ -3,9 +3,29 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="login.LoginTest"/>
-      <class name="completeScenarios.SignUpAndLogin"/>
-      <class name="signup.NewUserTest"/>
+      <class name="completeScenarios.PosTest"/>
+      <class name="completeScenarios.NUniqueEmail"/>
+      <class name="completeScenarios.NEmailVal1"/>
+      <class name="completeScenarios.NFnameVal"/>
+      <class name="completeScenarios.NEmailVal2"/>
+      <class name="completeScenarios.NEmailVal3"/>
+      <class name="completeScenarios.NEmailVal4"/>
+      <class name="completeScenarios.NUniqueName"/>
+      <class name="completeScenarios.NPwdNsc"/>
+      <class name="completeScenarios.NPwdNnchar"/>
+      <class name="completeScenarios.NFnameLnameNEqual"/>
+      <class name="completeScenarios.NPwdNuc"/>
+      <class name="completeScenarios.NEmailPwdWrong"/>
+      <class name="completeScenarios.NPwdNlc"/>
+      <class name="completeScenarios.NLnameVal"/>
+      <class name="completeScenarios.NPwdEmp"/>
+      <class name="completeScenarios.NPhoneEmp"/>
+      <class name="completeScenarios.NEmailEmp"/>
+      <class name="completeScenarios.NFnameLnameWrong"/>
+      <class name="completeScenarios.NPwdLimit"/>
+      <class name="completeScenarios.NPwdNMatch"/>
+      <class name="completeScenarios.NLnameEmp"/>
+      <class name="completeScenarios.NFnameEmp"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,24 +1,33 @@
 package pages;
 
+import java.awt.AWTException;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
 public class RegisterPage extends AbstractPage {
 
-	private By firstNameField = By.name("firstname");
-	private By lastNameField = By.name("lastname");
-	private By phoneField = By.name("phone");
-	private By emailField = By.name("email");
-	private By passwordField = By.name("password");
-	private By confirmPasswordField = By.name("confirmpassword");
+	By firstNameField = By.name("firstname");
+	By lastNameField = By.name("lastname");
+	By phoneField = By.name("phone");
+	By emailField = By.name("email");
+	By passwordField = By.name("password");
+	By confirmPasswordField = By.name("confirmpassword");
 
-	private By signUpBtn = By.cssSelector("#headersignupform > div > button");
+	By signUpBtn = By.cssSelector("#headersignupform > div > button");
+	public By alertMsg = By.className("alert-danger");
 
-	public RegisterPage(WebDriver driver) {
-		super(driver);
+	public RegisterPage(WebDriver driver,String pageName) {
+		super(driver, pageName);
 	}
 
 	private void setField(By fieldName, String fieldText) {
@@ -43,25 +52,42 @@ public class RegisterPage extends AbstractPage {
 
 	public void setPassword(String text) {
 		setField(passwordField, text);
+	}
+
+	
+	public void setConfirmPassword(String text) {
 		setField(confirmPasswordField, text);
 	}
-
-	public AccountPage clickSignUpBtn() {
+	
+	public AccountPage clickSignup() {
 		WebElement signUpElement = getDriver().findElement(signUpBtn);
-		scrollDownToSignUpBtn(signUpElement);
 		getWait().until(ExpectedConditions.presenceOfAllElementsLocatedBy(signUpBtn));
-		signUpElement.click();
-		return new AccountPage(getDriver());
+		clickButton(signUpElement);
+		return new AccountPage(getDriver(),ACCOUNTPAGENAME);
 	}
-
-	private void scrollDownToSignUpBtn(WebElement elem) {
-		JavascriptExecutor js = (JavascriptExecutor) getDriver();
-		js.executeScript("window.scrollTo(" + elem.getLocation().x + "," + (elem.getLocation().y - 100) + ");");
+	
+	public void scrollToAlertMsg() {
+		WebElement alertElem = getDriver().findElement(alertMsg);
+		scrollTo(alertElem);
 	}
+	
+	
+	public String getAlertMsgText() {
+//		try {
+//				getWait().until(ExpectedConditions.presenceOfElementLocated(alertMsg));
+//			} catch (Exception e) {
+//			throw new AssertionError(
+//					"WebDriver couldn’t locate the element", e);
+//			}
+		return getDriver().findElement(alertMsg).getText();
+	}
+	
 
-	public String getTitle() {
-		getWait().until(ExpectedConditions.titleContains("Register"));
-		return getDriver().getTitle();
+	public boolean isSamePage() {
+		WebElement signUpElement = getDriver().findElement(signUpBtn);
+		getWait().until(ExpectedConditions.presenceOfAllElementsLocatedBy(signUpBtn));
+		ExpectedConditions.invisibilityOf(signUpElement);
+		return  signUpElement.isDisplayed();
 	}
 
 }

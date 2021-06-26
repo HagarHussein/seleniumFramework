@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="completeScenarios.NFnameLnameNEqual">
+        <methods>
+          <include name="closeSession"/>
+          <include name="enterRegisterationPage"/>
+          <include name="init"/>
+          <include name="setNewUserData"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+          <include name="initJsonReader"/>
+        </methods>
+      </class> <!-- completeScenarios.NFnameLnameNEqual -->
+      <class name="completeScenarios.NPwdNlc">
+        <methods>
+          <include name="closeSession"/>
+          <include name="initJsonReader"/>
+          <include name="init"/>
+          <include name="enterRegisterationPage"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+          <include name="setNewUserData"/>
+        </methods>
+      </class> <!-- completeScenarios.NPwdNlc -->
+      <class name="completeScenarios.NPwdLimit">
+        <methods>
+          <include name="enterRegisterationPage"/>
+          <include name="initJsonReader"/>
+          <include name="closeSession"/>
+          <include name="setNewUserData"/>
+          <include name="verifySuccessfulRegisteration"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- completeScenarios.NPwdLimit -->
+      <class name="completeScenarios.NUniqueEmail">
+        <methods>
+          <include name="initJsonReader"/>
+          <include name="closeSession"/>
+          <include name="precondition"/>
+          <include name="setNewUserData"/>
+          <include name="enterRegisterationPage"/>
+          <include name="init"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+        </methods>
+      </class> <!-- completeScenarios.NUniqueEmail -->
+      <class name="completeScenarios.NFnameLnameWrong">
+        <methods>
+          <include name="closeSession"/>
+          <include name="init"/>
+          <include name="initJsonReader"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+          <include name="enterRegisterationPage"/>
+          <include name="setNewUserData"/>
+        </methods>
+      </class> <!-- completeScenarios.NFnameLnameWrong -->
+      <class name="completeScenarios.NLnameVal">
+        <methods>
+          <include name="initJsonReader"/>
+          <include name="closeSession"/>
+          <include name="setNewUserData"/>
+          <include name="init"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+          <include name="enterRegisterationPage"/>
+        </methods>
+      </class> <!-- completeScenarios.NLnameVal -->
+      <class name="completeScenarios.NPwdNnchar">
+        <methods>
+          <include name="closeSession"/>
+          <include name="initJsonReader"/>
+          <include name="setNewUserData"/>
+          <include name="enterRegisterationPage"/>
+          <include name="init"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+        </methods>
+      </class> <!-- completeScenarios.NPwdNnchar -->
+      <class name="completeScenarios.NPwdNsc">
+        <methods>
+          <include name="closeSession"/>
+          <include name="initJsonReader"/>
+          <include name="setNewUserData"/>
+          <include name="enterRegisterationPage"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- completeScenarios.NPwdNsc -->
+      <class name="completeScenarios.NPwdNuc">
+        <methods>
+          <include name="initJsonReader"/>
+          <include name="closeSession"/>
+          <include name="setNewUserData"/>
+          <include name="enterRegisterationPage"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- completeScenarios.NPwdNuc -->
+      <class name="completeScenarios.NUniqueName">
+        <methods>
+          <include name="enterRegisterationPage"/>
+          <include name="closeSession"/>
+          <include name="init"/>
+          <include name="initJsonReader"/>
+          <include name="setNewUserData"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+        </methods>
+      </class> <!-- completeScenarios.NUniqueName -->
+      <class name="completeScenarios.PosTest">
+        <methods>
+          <include name="setNewUserData"/>
+          <include name="closeSession"/>
+          <include name="initJsonReader"/>
+          <include name="enterRegisterationPage"/>
+          <include name="verifySuccessfulRegisteration"/>
+          <include name="init"/>
+          <include name="validateSuccessfulLogin"/>
+          <include name="setLoginCredintials"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- completeScenarios.PosTest -->
+      <class name="completeScenarios.NFnameVal">
+        <methods>
+          <include name="closeSession"/>
+          <include name="init"/>
+          <include name="initJsonReader"/>
+          <include name="enterRegisterationPage"/>
+          <include name="verifyUnSuccessfulRegisteration"/>
+          <include name="setNewUserData"/>
+        </methods>
+      </class> <!-- completeScenarios.NFnameVal -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

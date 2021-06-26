@@ -8,10 +8,21 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
+
+// cross platform
+import org.openqa.selenium.remote.DesiredCapabilities;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -21,48 +32,28 @@ import data.JsonDataReader;
 import pages.HomePage;
 import utilities.Helper;
 
+@Listeners({Helper.class})
 public class BaseTest {
 
-	private WebDriver driver;
-	protected HomePage homePage;
-	protected JsonDataReader dataReader;
-	private ExtentTest logger;
-	private ExtentReports report;
+	public WebDriver driver;
 
-	@BeforeTest
+	public JsonDataReader dataReader; // to be moved inside each test class
+
+	
+	@BeforeClass
 	public void init() {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Resources\\chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("https://www.phptravels.net/home");
-		homePage = new HomePage(driver);
+		
 	}
-
-	@BeforeTest
-	public void initJsonReader() throws FileNotFoundException, IOException, ParseException {
-		dataReader = new JsonDataReader();
-		dataReader.JsonReader();
+	
+	public void implicitWait() {
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
-
-	@BeforeMethod
-	public void setupReport(Method m) {
-		report = new ExtentReports("./Reports/customizedReport.html");
-		logger = report.startTest(m.getName());
-	}
-
-	@AfterMethod
-	public void updateReportWithFailedScreenshots(ITestResult result, Method m) throws IOException {
-		if (result.getStatus() == ITestResult.FAILURE) {
-			String screenshot_path = "./Screenshots/" + result.getName() + ".png";
-			String screenshotAbsolutePath = Helper.takeScreenShot(driver, screenshot_path);
-			String image = logger.addScreenCapture(screenshotAbsolutePath);
-			logger.log(LogStatus.FAIL, m.getName(), image);
-
-		}
-		report.endTest(logger);
-		report.flush();
-	}
-
-	@AfterTest
+	
+	@AfterClass
 	public void closeSession() {
 		driver.quit();
 	}

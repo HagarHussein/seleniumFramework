@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="73" passed="54" failed="12" skipped="7">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-26T23:46:03 EET" name="Suite" finished-at="2021-06-26T23:51:12 EET" duration-ms="308316">
+    <groups>
+    </groups>
+    <test started-at="2021-06-26T23:46:03 EET" name="Test" finished-at="2021-06-26T23:51:12 EET" duration-ms="308316">
+      <class name="completeScenarios.NLnameVal">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NLnameVal@11a00961]" started-at="2021-06-26T23:49:08 EET" name="init" finished-at="2021-06-26T23:49:14 EET" duration-ms="6594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NLnameVal@11a00961]" started-at="2021-06-26T23:49:14 EET" name="initJsonReader" finished-at="2021-06-26T23:49:14 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NLnameVal@11a00961]" started-at="2021-06-26T23:49:14 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:49:15 EET" duration-ms="1267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NLnameVal@11a00961]" started-at="2021-06-26T23:49:15 EET" name="setNewUserData" finished-at="2021-06-26T23:49:17 EET" depends-on-methods="completeScenarios.NLnameVal.enterRegisterationPage" duration-ms="1815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NLnameVal@11a00961]" started-at="2021-06-26T23:49:17 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:49:17 EET" depends-on-methods="completeScenarios.NLnameVal.setNewUserData" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Register] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Register] but found [My Account]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NLnameVal.verifyUnSuccessfulRegisteration(NLnameVal.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NLnameVal@11a00961]" started-at="2021-06-26T23:49:17 EET" name="closeSession" finished-at="2021-06-26T23:49:18 EET" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NLnameVal -->
+      <class name="completeScenarios.NPhoneEmp">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NPhoneEmp@4992613f]" started-at="2021-06-26T23:49:33 EET" name="init" finished-at="2021-06-26T23:49:40 EET" duration-ms="6772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NPhoneEmp@4992613f]" started-at="2021-06-26T23:49:40 EET" name="initJsonReader" finished-at="2021-06-26T23:49:40 EET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NPhoneEmp@4992613f]" started-at="2021-06-26T23:49:40 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:49:41 EET" duration-ms="1449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NPhoneEmp@4992613f]" started-at="2021-06-26T23:49:41 EET" name="setNewUserData" finished-at="2021-06-26T23:49:47 EET" depends-on-methods="completeScenarios.NPhoneEmp.enterRegisterationPage" duration-ms="5544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NPhoneEmp@4992613f]" started-at="2021-06-26T23:49:47 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:49:47 EET" depends-on-methods="completeScenarios.NPhoneEmp.setNewUserData" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NPhoneEmp@4992613f]" started-at="2021-06-26T23:49:47 EET" name="closeSession" finished-at="2021-06-26T23:49:47 EET" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NPhoneEmp -->
+      <class name="completeScenarios.NPwdEmp">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NPwdEmp@7ce9e05a]" started-at="2021-06-26T23:49:18 EET" name="init" finished-at="2021-06-26T23:49:25 EET" duration-ms="7314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NPwdEmp@7ce9e05a]" started-at="2021-06-26T23:49:25 EET" name="initJsonReader" finished-at="2021-06-26T23:49:25 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NPwdEmp@7ce9e05a]" started-at="2021-06-26T23:49:25 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:49:27 EET" duration-ms="1420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NPwdEmp@7ce9e05a]" started-at="2021-06-26T23:49:27 EET" name="setNewUserData" finished-at="2021-06-26T23:49:32 EET" depends-on-methods="completeScenarios.NPwdEmp.enterRegisterationPage" duration-ms="5531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NPwdEmp@7ce9e05a]" started-at="2021-06-26T23:49:32 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:49:32 EET" depends-on-methods="completeScenarios.NPwdEmp.setNewUserData" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NPwdEmp@7ce9e05a]" started-at="2021-06-26T23:49:32 EET" name="closeSession" finished-at="2021-06-26T23:49:33 EET" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NPwdEmp -->
+      <class name="completeScenarios.NEmailPwdWrong">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NEmailPwdWrong@49cf9028]" started-at="2021-06-26T23:48:44 EET" name="init" finished-at="2021-06-26T23:48:50 EET" duration-ms="6481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NEmailPwdWrong@49cf9028]" started-at="2021-06-26T23:48:50 EET" name="initJsonReader" finished-at="2021-06-26T23:48:50 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NEmailPwdWrong@49cf9028]" started-at="2021-06-26T23:48:50 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:48:51 EET" duration-ms="948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NEmailPwdWrong@49cf9028]" started-at="2021-06-26T23:48:51 EET" name="setNewUserData" finished-at="2021-06-26T23:48:57 EET" depends-on-methods="completeScenarios.NEmailPwdWrong.enterRegisterationPage" duration-ms="5525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NEmailPwdWrong@49cf9028]" started-at="2021-06-26T23:48:57 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:48:57 EET" depends-on-methods="completeScenarios.NEmailPwdWrong.setNewUserData" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NEmailPwdWrong@49cf9028]" started-at="2021-06-26T23:48:57 EET" name="closeSession" finished-at="2021-06-26T23:48:57 EET" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NEmailPwdWrong -->
+      <class name="completeScenarios.NEmailEmp">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NEmailEmp@6fd5717c]" started-at="2021-06-26T23:49:47 EET" name="init" finished-at="2021-06-26T23:49:55 EET" duration-ms="7466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NEmailEmp@6fd5717c]" started-at="2021-06-26T23:49:55 EET" name="initJsonReader" finished-at="2021-06-26T23:49:55 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NEmailEmp@6fd5717c]" started-at="2021-06-26T23:49:55 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:49:56 EET" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NEmailEmp@6fd5717c]" started-at="2021-06-26T23:49:56 EET" name="setNewUserData" finished-at="2021-06-26T23:50:01 EET" depends-on-methods="completeScenarios.NEmailEmp.enterRegisterationPage" duration-ms="5539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NEmailEmp@6fd5717c]" started-at="2021-06-26T23:50:01 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:50:01 EET" depends-on-methods="completeScenarios.NEmailEmp.setNewUserData" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NEmailEmp@6fd5717c]" started-at="2021-06-26T23:50:01 EET" name="closeSession" finished-at="2021-06-26T23:50:02 EET" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NEmailEmp -->
+      <class name="completeScenarios.NPwdNlc">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NPwdNlc@2b61a019]" started-at="2021-06-26T23:48:57 EET" name="init" finished-at="2021-06-26T23:49:04 EET" duration-ms="6956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NPwdNlc@2b61a019]" started-at="2021-06-26T23:49:04 EET" name="initJsonReader" finished-at="2021-06-26T23:49:04 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NPwdNlc@2b61a019]" started-at="2021-06-26T23:49:04 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:49:05 EET" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NPwdNlc@2b61a019]" started-at="2021-06-26T23:49:05 EET" name="setNewUserData" finished-at="2021-06-26T23:49:07 EET" depends-on-methods="completeScenarios.NPwdNlc.enterRegisterationPage" duration-ms="1650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NPwdNlc@2b61a019]" started-at="2021-06-26T23:49:07 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:49:07 EET" depends-on-methods="completeScenarios.NPwdNlc.setNewUserData" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Register] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Register] but found [My Account]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NPwdNlc.verifyUnSuccessfulRegisteration(NPwdNlc.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NPwdNlc@2b61a019]" started-at="2021-06-26T23:49:07 EET" name="closeSession" finished-at="2021-06-26T23:49:08 EET" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NPwdNlc -->
+      <class name="completeScenarios.NFnameLnameWrong">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NFnameLnameWrong@7e2f86e6]" started-at="2021-06-26T23:50:02 EET" name="init" finished-at="2021-06-26T23:50:09 EET" duration-ms="6613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NFnameLnameWrong@7e2f86e6]" started-at="2021-06-26T23:50:09 EET" name="initJsonReader" finished-at="2021-06-26T23:50:09 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NFnameLnameWrong@7e2f86e6]" started-at="2021-06-26T23:50:09 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:50:10 EET" duration-ms="967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NFnameLnameWrong@7e2f86e6]" started-at="2021-06-26T23:50:10 EET" name="setNewUserData" finished-at="2021-06-26T23:50:12 EET" depends-on-methods="completeScenarios.NFnameLnameWrong.enterRegisterationPage" duration-ms="1975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NFnameLnameWrong@7e2f86e6]" started-at="2021-06-26T23:50:12 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:50:12 EET" depends-on-methods="completeScenarios.NFnameLnameWrong.setNewUserData" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Register] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Register] but found [My Account]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NFnameLnameWrong.verifyUnSuccessfulRegisteration(NFnameLnameWrong.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NFnameLnameWrong@7e2f86e6]" started-at="2021-06-26T23:50:12 EET" name="closeSession" finished-at="2021-06-26T23:50:12 EET" duration-ms="626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NFnameLnameWrong -->
+      <class name="completeScenarios.NUniqueName">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NUniqueName@35835e65]" started-at="2021-06-26T23:47:46 EET" name="init" finished-at="2021-06-26T23:47:53 EET" duration-ms="6924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NUniqueName@35835e65]" started-at="2021-06-26T23:47:53 EET" name="initJsonReader" finished-at="2021-06-26T23:47:53 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NUniqueName@35835e65]" started-at="2021-06-26T23:47:53 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:47:54 EET" duration-ms="1427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NUniqueName@35835e65]" started-at="2021-06-26T23:47:54 EET" name="setNewUserData" finished-at="2021-06-26T23:47:57 EET" depends-on-methods="completeScenarios.NUniqueName.enterRegisterationPage" duration-ms="2396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NUniqueName@35835e65]" started-at="2021-06-26T23:47:57 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:47:57 EET" depends-on-methods="completeScenarios.NUniqueName.setNewUserData" duration-ms="5" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Register] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Register] but found [My Account]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NUniqueName.verifyUnSuccessfulRegisteration(NUniqueName.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NUniqueName@35835e65]" started-at="2021-06-26T23:47:57 EET" name="closeSession" finished-at="2021-06-26T23:47:58 EET" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NUniqueName -->
+      <class name="completeScenarios.PosTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.PosTest@1c504e66]" started-at="2021-06-26T23:46:03 EET" name="init" finished-at="2021-06-26T23:46:11 EET" duration-ms="7855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.PosTest@1c504e66]" started-at="2021-06-26T23:46:11 EET" name="initJsonReader" finished-at="2021-06-26T23:46:11 EET" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.PosTest@1c504e66]" started-at="2021-06-26T23:46:11 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:46:12 EET" duration-ms="1071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.PosTest@1c504e66]" started-at="2021-06-26T23:46:12 EET" name="setNewUserData" finished-at="2021-06-26T23:46:18 EET" depends-on-methods="completeScenarios.PosTest.enterRegisterationPage" duration-ms="5674" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [My Account] but found [Register]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [My Account] but found [Register]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.PosTest.setNewUserData(PosTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifySuccessfulRegisteration()[pri:0, instance:completeScenarios.PosTest@1c504e66]" started-at="2021-06-26T23:46:18 EET" name="verifySuccessfulRegisteration" finished-at="2021-06-26T23:46:18 EET" depends-on-methods="completeScenarios.PosTest.setNewUserData" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method PosTest.verifySuccessfulRegisteration()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method PosTest.verifySuccessfulRegisteration()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulRegisteration -->
+        <test-method signature="logout()[pri:0, instance:completeScenarios.PosTest@1c504e66]" started-at="2021-06-26T23:46:18 EET" name="logout" finished-at="2021-06-26T23:46:18 EET" depends-on-methods="completeScenarios.PosTest.verifySuccessfulRegisteration" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method PosTest.logout()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method PosTest.logout()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="setLoginCredintials()[pri:0, instance:completeScenarios.PosTest@1c504e66]" started-at="2021-06-26T23:46:18 EET" name="setLoginCredintials" finished-at="2021-06-26T23:46:18 EET" depends-on-methods="completeScenarios.PosTest.logout" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method PosTest.setLoginCredintials()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method PosTest.setLoginCredintials()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLoginCredintials -->
+        <test-method signature="validateSuccessfulLogin()[pri:0, instance:completeScenarios.PosTest@1c504e66]" started-at="2021-06-26T23:46:18 EET" name="validateSuccessfulLogin" finished-at="2021-06-26T23:46:18 EET" depends-on-methods="completeScenarios.PosTest.setLoginCredintials" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method PosTest.validateSuccessfulLogin()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method PosTest.validateSuccessfulLogin()[pri:0, instance:completeScenarios.PosTest@1c504e66] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSuccessfulLogin -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.PosTest@1c504e66]" started-at="2021-06-26T23:46:18 EET" name="closeSession" finished-at="2021-06-26T23:46:19 EET" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.PosTest -->
+      <class name="completeScenarios.NPwdNMatch">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NPwdNMatch@17b64941]" started-at="2021-06-26T23:50:26 EET" name="init" finished-at="2021-06-26T23:50:34 EET" duration-ms="7483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NPwdNMatch@17b64941]" started-at="2021-06-26T23:50:34 EET" name="initJsonReader" finished-at="2021-06-26T23:50:34 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NPwdNMatch@17b64941]" started-at="2021-06-26T23:50:34 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:50:35 EET" duration-ms="1392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NPwdNMatch@17b64941]" started-at="2021-06-26T23:50:35 EET" name="setNewUserData" finished-at="2021-06-26T23:50:41 EET" depends-on-methods="completeScenarios.NPwdNMatch.enterRegisterationPage" duration-ms="5552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NPwdNMatch@17b64941]" started-at="2021-06-26T23:50:41 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:50:41 EET" depends-on-methods="completeScenarios.NPwdNMatch.setNewUserData" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NPwdNMatch@17b64941]" started-at="2021-06-26T23:50:41 EET" name="closeSession" finished-at="2021-06-26T23:50:41 EET" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NPwdNMatch -->
+      <class name="completeScenarios.NPwdLimit">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NPwdLimit@4d774249]" started-at="2021-06-26T23:50:12 EET" name="init" finished-at="2021-06-26T23:50:19 EET" duration-ms="6732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NPwdLimit@4d774249]" started-at="2021-06-26T23:50:19 EET" name="initJsonReader" finished-at="2021-06-26T23:50:19 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NPwdLimit@4d774249]" started-at="2021-06-26T23:50:19 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:50:20 EET" duration-ms="937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NPwdLimit@4d774249]" started-at="2021-06-26T23:50:20 EET" name="setNewUserData" finished-at="2021-06-26T23:50:25 EET" depends-on-methods="completeScenarios.NPwdLimit.enterRegisterationPage" duration-ms="5546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifySuccessfulRegisteration()[pri:0, instance:completeScenarios.NPwdLimit@4d774249]" started-at="2021-06-26T23:50:25 EET" name="verifySuccessfulRegisteration" finished-at="2021-06-26T23:50:26 EET" depends-on-methods="completeScenarios.NPwdLimit.setNewUserData" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [My Account] but found [Register]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [My Account] but found [Register]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NPwdLimit.verifySuccessfulRegisteration(NPwdLimit.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NPwdLimit@4d774249]" started-at="2021-06-26T23:50:26 EET" name="closeSession" finished-at="2021-06-26T23:50:26 EET" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NPwdLimit -->
+      <class name="completeScenarios.NUniqueEmail">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395]" started-at="2021-06-26T23:46:19 EET" name="init" finished-at="2021-06-26T23:46:28 EET" duration-ms="8789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395]" started-at="2021-06-26T23:46:28 EET" name="initJsonReader" finished-at="2021-06-26T23:46:28 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="precondition()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395]" started-at="2021-06-26T23:46:28 EET" name="precondition" finished-at="2021-06-26T23:46:35 EET" duration-ms="6816" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [My Account] but found [Register]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [My Account] but found [Register]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NUniqueEmail.precondition(NUniqueEmail.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395]" started-at="2021-06-26T23:46:35 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:46:35 EET" depends-on-methods="completeScenarios.NUniqueEmail.precondition" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method NUniqueEmail.enterRegisterationPage()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method NUniqueEmail.enterRegisterationPage()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395]" started-at="2021-06-26T23:46:35 EET" name="setNewUserData" finished-at="2021-06-26T23:46:35 EET" depends-on-methods="completeScenarios.NUniqueEmail.enterRegisterationPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method NUniqueEmail.setNewUserData()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method NUniqueEmail.setNewUserData()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395]" started-at="2021-06-26T23:46:35 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:46:35 EET" depends-on-methods="completeScenarios.NUniqueEmail.setNewUserData" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method NUniqueEmail.verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method NUniqueEmail.verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NUniqueEmail@345cf395]" started-at="2021-06-26T23:46:35 EET" name="closeSession" finished-at="2021-06-26T23:46:35 EET" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NUniqueEmail -->
+      <class name="completeScenarios.NLnameEmp">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NLnameEmp@53ac845a]" started-at="2021-06-26T23:50:41 EET" name="init" finished-at="2021-06-26T23:50:49 EET" duration-ms="7347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NLnameEmp@53ac845a]" started-at="2021-06-26T23:50:49 EET" name="initJsonReader" finished-at="2021-06-26T23:50:49 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NLnameEmp@53ac845a]" started-at="2021-06-26T23:50:49 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:50:50 EET" duration-ms="956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NLnameEmp@53ac845a]" started-at="2021-06-26T23:50:50 EET" name="setNewUserData" finished-at="2021-06-26T23:50:55 EET" depends-on-methods="completeScenarios.NLnameEmp.enterRegisterationPage" duration-ms="5528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NLnameEmp@53ac845a]" started-at="2021-06-26T23:50:55 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:50:55 EET" depends-on-methods="completeScenarios.NLnameEmp.setNewUserData" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NLnameEmp@53ac845a]" started-at="2021-06-26T23:50:55 EET" name="closeSession" finished-at="2021-06-26T23:50:56 EET" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NLnameEmp -->
+      <class name="completeScenarios.NFnameEmp">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NFnameEmp@5136207f]" started-at="2021-06-26T23:50:56 EET" name="init" finished-at="2021-06-26T23:51:05 EET" duration-ms="8696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NFnameEmp@5136207f]" started-at="2021-06-26T23:51:05 EET" name="initJsonReader" finished-at="2021-06-26T23:51:05 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NFnameEmp@5136207f]" started-at="2021-06-26T23:51:05 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:51:05 EET" duration-ms="922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NFnameEmp@5136207f]" started-at="2021-06-26T23:51:05 EET" name="setNewUserData" finished-at="2021-06-26T23:51:11 EET" depends-on-methods="completeScenarios.NFnameEmp.enterRegisterationPage" duration-ms="5547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NFnameEmp@5136207f]" started-at="2021-06-26T23:51:11 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:51:11 EET" depends-on-methods="completeScenarios.NFnameEmp.setNewUserData" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NFnameEmp@5136207f]" started-at="2021-06-26T23:51:11 EET" name="closeSession" finished-at="2021-06-26T23:51:12 EET" duration-ms="650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NFnameEmp -->
+      <class name="completeScenarios.NEmailVal3">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NEmailVal3@7144655b]" started-at="2021-06-26T23:47:14 EET" name="init" finished-at="2021-06-26T23:47:24 EET" duration-ms="9587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NEmailVal3@7144655b]" started-at="2021-06-26T23:47:24 EET" name="initJsonReader" finished-at="2021-06-26T23:47:24 EET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NEmailVal3@7144655b]" started-at="2021-06-26T23:47:24 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:47:25 EET" duration-ms="1332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NEmailVal3@7144655b]" started-at="2021-06-26T23:47:25 EET" name="setNewUserData" finished-at="2021-06-26T23:47:31 EET" depends-on-methods="completeScenarios.NEmailVal3.enterRegisterationPage" duration-ms="5567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NEmailVal3@7144655b]" started-at="2021-06-26T23:47:31 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:47:31 EET" depends-on-methods="completeScenarios.NEmailVal3.setNewUserData" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NEmailVal3@7144655b]" started-at="2021-06-26T23:47:31 EET" name="closeSession" finished-at="2021-06-26T23:47:31 EET" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NEmailVal3 -->
+      <class name="completeScenarios.NFnameLnameNEqual">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NFnameLnameNEqual@30814f43]" started-at="2021-06-26T23:48:21 EET" name="init" finished-at="2021-06-26T23:48:28 EET" duration-ms="6693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NFnameLnameNEqual@30814f43]" started-at="2021-06-26T23:48:28 EET" name="initJsonReader" finished-at="2021-06-26T23:48:28 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NFnameLnameNEqual@30814f43]" started-at="2021-06-26T23:48:28 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:48:29 EET" duration-ms="1276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NFnameLnameNEqual@30814f43]" started-at="2021-06-26T23:48:29 EET" name="setNewUserData" finished-at="2021-06-26T23:48:31 EET" depends-on-methods="completeScenarios.NFnameLnameNEqual.enterRegisterationPage" duration-ms="2319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NFnameLnameNEqual@30814f43]" started-at="2021-06-26T23:48:31 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:48:31 EET" depends-on-methods="completeScenarios.NFnameLnameNEqual.setNewUserData" duration-ms="5" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Register] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Register] but found [My Account]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NFnameLnameNEqual.verifyUnSuccessfulRegisteration(NFnameLnameNEqual.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NFnameLnameNEqual@30814f43]" started-at="2021-06-26T23:48:32 EET" name="closeSession" finished-at="2021-06-26T23:48:32 EET" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NFnameLnameNEqual -->
+      <class name="completeScenarios.NEmailVal4">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NEmailVal4@5c82cd4f]" started-at="2021-06-26T23:47:31 EET" name="init" finished-at="2021-06-26T23:47:39 EET" duration-ms="7613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NEmailVal4@5c82cd4f]" started-at="2021-06-26T23:47:39 EET" name="initJsonReader" finished-at="2021-06-26T23:47:39 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NEmailVal4@5c82cd4f]" started-at="2021-06-26T23:47:39 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:47:40 EET" duration-ms="935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NEmailVal4@5c82cd4f]" started-at="2021-06-26T23:47:40 EET" name="setNewUserData" finished-at="2021-06-26T23:47:45 EET" depends-on-methods="completeScenarios.NEmailVal4.enterRegisterationPage" duration-ms="5568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NEmailVal4@5c82cd4f]" started-at="2021-06-26T23:47:45 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:47:45 EET" depends-on-methods="completeScenarios.NEmailVal4.setNewUserData" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NEmailVal4@5c82cd4f]" started-at="2021-06-26T23:47:45 EET" name="closeSession" finished-at="2021-06-26T23:47:46 EET" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NEmailVal4 -->
+      <class name="completeScenarios.NFnameVal">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NFnameVal@3c6aa04a]" started-at="2021-06-26T23:46:50 EET" name="init" finished-at="2021-06-26T23:46:56 EET" duration-ms="6795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NFnameVal@3c6aa04a]" started-at="2021-06-26T23:46:56 EET" name="initJsonReader" finished-at="2021-06-26T23:46:56 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NFnameVal@3c6aa04a]" started-at="2021-06-26T23:46:56 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:46:57 EET" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NFnameVal@3c6aa04a]" started-at="2021-06-26T23:46:57 EET" name="setNewUserData" finished-at="2021-06-26T23:47:00 EET" depends-on-methods="completeScenarios.NFnameVal.enterRegisterationPage" duration-ms="2156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NFnameVal@3c6aa04a]" started-at="2021-06-26T23:47:00 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:47:00 EET" depends-on-methods="completeScenarios.NFnameVal.setNewUserData" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Register] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Register] but found [My Account]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NFnameVal.verifyUnSuccessfulRegisteration(NFnameVal.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NFnameVal@3c6aa04a]" started-at="2021-06-26T23:47:00 EET" name="closeSession" finished-at="2021-06-26T23:47:00 EET" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NFnameVal -->
+      <class name="completeScenarios.NEmailVal1">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NEmailVal1@bc4d5e1]" started-at="2021-06-26T23:46:35 EET" name="init" finished-at="2021-06-26T23:46:42 EET" duration-ms="7049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NEmailVal1@bc4d5e1]" started-at="2021-06-26T23:46:42 EET" name="initJsonReader" finished-at="2021-06-26T23:46:42 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NEmailVal1@bc4d5e1]" started-at="2021-06-26T23:46:42 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:46:43 EET" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NEmailVal1@bc4d5e1]" started-at="2021-06-26T23:46:43 EET" name="setNewUserData" finished-at="2021-06-26T23:46:49 EET" depends-on-methods="completeScenarios.NEmailVal1.enterRegisterationPage" duration-ms="5564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NEmailVal1@bc4d5e1]" started-at="2021-06-26T23:46:49 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:46:49 EET" depends-on-methods="completeScenarios.NEmailVal1.setNewUserData" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NEmailVal1@bc4d5e1]" started-at="2021-06-26T23:46:49 EET" name="closeSession" finished-at="2021-06-26T23:46:50 EET" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NEmailVal1 -->
+      <class name="completeScenarios.NEmailVal2">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NEmailVal2@2257fadf]" started-at="2021-06-26T23:47:00 EET" name="init" finished-at="2021-06-26T23:47:07 EET" duration-ms="6596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NEmailVal2@2257fadf]" started-at="2021-06-26T23:47:07 EET" name="initJsonReader" finished-at="2021-06-26T23:47:07 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NEmailVal2@2257fadf]" started-at="2021-06-26T23:47:07 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:47:08 EET" duration-ms="1011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NEmailVal2@2257fadf]" started-at="2021-06-26T23:47:08 EET" name="setNewUserData" finished-at="2021-06-26T23:47:14 EET" depends-on-methods="completeScenarios.NEmailVal2.enterRegisterationPage" duration-ms="5545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NEmailVal2@2257fadf]" started-at="2021-06-26T23:47:14 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:47:14 EET" depends-on-methods="completeScenarios.NEmailVal2.setNewUserData" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NEmailVal2@2257fadf]" started-at="2021-06-26T23:47:14 EET" name="closeSession" finished-at="2021-06-26T23:47:14 EET" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NEmailVal2 -->
+      <class name="completeScenarios.NPwdNsc">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NPwdNsc@289fdb08]" started-at="2021-06-26T23:47:58 EET" name="init" finished-at="2021-06-26T23:48:04 EET" duration-ms="6584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NPwdNsc@289fdb08]" started-at="2021-06-26T23:48:04 EET" name="initJsonReader" finished-at="2021-06-26T23:48:04 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NPwdNsc@289fdb08]" started-at="2021-06-26T23:48:04 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:48:06 EET" duration-ms="1402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NPwdNsc@289fdb08]" started-at="2021-06-26T23:48:06 EET" name="setNewUserData" finished-at="2021-06-26T23:48:07 EET" depends-on-methods="completeScenarios.NPwdNsc.enterRegisterationPage" duration-ms="1879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NPwdNsc@289fdb08]" started-at="2021-06-26T23:48:07 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:48:07 EET" depends-on-methods="completeScenarios.NPwdNsc.setNewUserData" duration-ms="5" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Register] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Register] but found [My Account]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NPwdNsc.verifyUnSuccessfulRegisteration(NPwdNsc.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NPwdNsc@289fdb08]" started-at="2021-06-26T23:48:08 EET" name="closeSession" finished-at="2021-06-26T23:48:08 EET" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NPwdNsc -->
+      <class name="completeScenarios.NPwdNnchar">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NPwdNnchar@7a231dfd]" started-at="2021-06-26T23:48:08 EET" name="init" finished-at="2021-06-26T23:48:17 EET" duration-ms="8917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NPwdNnchar@7a231dfd]" started-at="2021-06-26T23:48:17 EET" name="initJsonReader" finished-at="2021-06-26T23:48:17 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NPwdNnchar@7a231dfd]" started-at="2021-06-26T23:48:17 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:48:18 EET" duration-ms="928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NPwdNnchar@7a231dfd]" started-at="2021-06-26T23:48:18 EET" name="setNewUserData" finished-at="2021-06-26T23:48:20 EET" depends-on-methods="completeScenarios.NPwdNnchar.enterRegisterationPage" duration-ms="2340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NPwdNnchar@7a231dfd]" started-at="2021-06-26T23:48:20 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:48:20 EET" depends-on-methods="completeScenarios.NPwdNnchar.setNewUserData" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Register] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Register] but found [My Account]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NPwdNnchar.verifyUnSuccessfulRegisteration(NPwdNnchar.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NPwdNnchar@7a231dfd]" started-at="2021-06-26T23:48:21 EET" name="closeSession" finished-at="2021-06-26T23:48:21 EET" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NPwdNnchar -->
+      <class name="completeScenarios.NPwdNuc">
+        <test-method is-config="true" signature="init()[pri:0, instance:completeScenarios.NPwdNuc@1fde4f40]" started-at="2021-06-26T23:48:32 EET" name="init" finished-at="2021-06-26T23:48:39 EET" duration-ms="6956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initJsonReader()[pri:0, instance:completeScenarios.NPwdNuc@1fde4f40]" started-at="2021-06-26T23:48:39 EET" name="initJsonReader" finished-at="2021-06-26T23:48:39 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initJsonReader -->
+        <test-method signature="enterRegisterationPage()[pri:0, instance:completeScenarios.NPwdNuc@1fde4f40]" started-at="2021-06-26T23:48:39 EET" name="enterRegisterationPage" finished-at="2021-06-26T23:48:41 EET" duration-ms="1905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRegisterationPage -->
+        <test-method signature="setNewUserData()[pri:0, instance:completeScenarios.NPwdNuc@1fde4f40]" started-at="2021-06-26T23:48:41 EET" name="setNewUserData" finished-at="2021-06-26T23:48:43 EET" depends-on-methods="completeScenarios.NPwdNuc.enterRegisterationPage" duration-ms="1874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserData -->
+        <test-method signature="verifyUnSuccessfulRegisteration()[pri:0, instance:completeScenarios.NPwdNuc@1fde4f40]" started-at="2021-06-26T23:48:43 EET" name="verifyUnSuccessfulRegisteration" finished-at="2021-06-26T23:48:43 EET" depends-on-methods="completeScenarios.NPwdNuc.setNewUserData" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Register] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Register] but found [My Account]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at completeScenarios.NPwdNuc.verifyUnSuccessfulRegisteration(NPwdNuc.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulRegisteration -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:completeScenarios.NPwdNuc@1fde4f40]" started-at="2021-06-26T23:48:43 EET" name="closeSession" finished-at="2021-06-26T23:48:44 EET" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- completeScenarios.NPwdNuc -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
