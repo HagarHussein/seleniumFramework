@@ -17,23 +17,23 @@ These instructions will get you a copy of the project up and running on your loc
 1. Download and install Maven
 2. Download Eclips with Java JDK
 3. Install TestNG
-4. Create a new maven project inside Eclipse
-5. Replace the main and test folders with the equivalent seleniumFramework folders from this project as well as the pom.xml file
-6. Download chromedriver.exe and place it inside a newly created "Resources" folder inside the main hierarchy of the project
-7. Create "Reports", "Screenshots" and "Responses" to have the outputs generated inside of them
-8. Run "SignUpAndLogin.java" class as a "TestNG Test"
+4. Pull the project into Eclipse on your machine
+5. Download chromedriver.exe and place it inside a newly created "Resources" folder inside the main hierarchy of the project
+6. Run testng.xml file
+7. open cmd and type the following command "Allure serve <allure-results folder location on your disk>"
 
 ```
-Notes: After the test case execution, the API response will be saved in the "Responses" folder.
+Notes: If the above steps didn't work, you can simply create a new maven project and replace the pages and tests files inside your project
 ```
 ![Project hierarchy sample](https://github.com/HagarHussein/seleniumFramework/blob/master/Capture.PNG)
 ## Features
 
-* Data Driven Testing Framework - *Fetching data from a JSON file using TestNG @BeforeTest annotation.*
+* Data Driven Testing Framework - *Fetching data from a JSON file using TestNG @BeforeTest annotation and json file.*
 * Object Oriendted Design - *Using Page Object Model design pattern.*
-* Customized TestNG Report - *Include a screenshot for the failed steps.*
+* Customized TestNG Report - *Using Allure report that includes a screenshot for the failed steps and a description for each test.*
 * HTTP Interceptor for the sign up API request - *Response is saved in a HTML file.*
 * Assertion errors recovery and exception handeling - *Using hard assertions, waits and try and catch*
+* 23 automated test cases for the positive and negative scenarios 
 
 
 ## Componenets
@@ -51,6 +51,7 @@ There are 3 main packages in this folder.
 * data
   - *UserData.json:* input data
   - *JsonReaderData.java*: a class to parse the data from the json file
+  - *testCaseNum.json*: a mapping between testcase name and the index to the UserData.json file to parse the correct data for each test case
 * utilities
   - *Helper.java:* a helper class that contains a function to take a screenshot from the current browsing session to be used in the report generation
   - *HttpRequest.java:* has 2 functions for sending a request and saving the response of the API
@@ -59,10 +60,22 @@ There are 3 main packages in this folder.
 * Other packages for the test scenarios
 
 
-## Limitations
-
-* The customized output report contains only the failed steps with a screenshot to the page that failed.
-* The existing test cases passes. To make it fail to be able to see the customized report functionality, modify any web element with a wrong locator.
-* Not all the cases are handeled to recover from the exceptions.
+## In Scope and Out of scope
+* in scope:
+All the fields validation are in scope
+	1. first Name which must start with capital letter
+	2- last Name which must start with capital letter and can’t be equal First Name
+	3- Enter valid password and check it must have capital letter, small letter, special character and there is no limit for password
+	4- Email should be unique for every user
+	
+* OOS
+1- Enter valid Gmail
+	can not verify whether the entered gmail is a valid gmail or randomly generated email
+	(the software itself can not validate this. it can only validate the correct email format "@gmail.com")
+2- After click Submit, Check verification mail sent. Click on verification link on Verification Mail sent
+	The verification is just a step to test the main feature, sign up. It will require connecting to a third party application which is not the scope of testing.
+	This step can be achieved in the automation script by setting the registered email's status in the database as "verified" to pypass this step.
+	The email verification step's testing can be done manually in a separate test case.
+	
 
 
