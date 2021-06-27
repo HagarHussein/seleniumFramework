@@ -11,19 +11,22 @@ These instructions will get you a copy of the project up and running on your loc
 * Eclipse
 * Java
 * TestNG
+* Allure report
 
 ### Installing
 
 1. Download and install Maven
 2. Download Eclips with Java JDK
 3. Install TestNG
-4. Pull the project into Eclipse on your machine
-5. Download chromedriver.exe and place it inside a newly created "Resources" folder inside the main hierarchy of the project
-6. Run testng.xml file
-7. open cmd and type the following command "Allure serve [allure-results folder location on your disk]"
+4. Install Allure
+5. Pull the project into Eclipse on your machine
+6. Download chromedriver.exe and place it inside a newly created "Resources" folder inside the main hierarchy of the project
+7. Run testng.xml file
+8. open cmd and type the following command "Allure serve [allure-results folder location on your disk]"
 
 ```
 Notes: If the above steps didn't work, you can simply create a new maven project and replace the pages and tests files inside your project
+If you want to see the execution report only, it is uploaded here. you can just download it and run the cmd in step 8.
 ```
 ![Project hierarchy sample](https://github.com/HagarHussein/seleniumFramework/blob/master/Capture.PNG)
 ## Features
