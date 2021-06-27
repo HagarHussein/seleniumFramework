@@ -73,13 +73,12 @@ All the fields validation are in scope
 	- Email should be unique for every user
 	
 * OOS
-- Enter valid Gmail:
-	can not verify whether the entered gmail is a valid gmail or randomly generated email
-	(the software itself can not validate this. it can only validate the correct email format "@gmail.com")
-- After click Submit, Check verification mail sent. Click on verification link on Verification Mail sent
-	The verification is just a step to test the main feature, sign up. It will require connecting to a third party application which is not the scope of testing.
-	This step can be achieved in the automation script by setting the registered email's status in the database as "verified" to pypass this step.
-	The email verification step's testing can be done manually in a separate test case.
+	- Enter valid Gmail:
+		- can not verify whether the entered gmail is a valid gmail or randomly generated email (the software itself can not validate this. it can only validate the correct email format "@gmail.com")
+	- After click Submit, Check verification mail sent. Click on verification link on Verification Mail sent
+		- The verification is just a step to test the main feature, sign up. It will require connecting to a third party application which is not the scope of testing.
+		- This step can be achieved in the automation script by setting the registered email's status in the database as "verified" to pypass this step.
+		- The email verification step's testing can be done manually in a separate test case.
 	
 
 
