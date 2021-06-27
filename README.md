@@ -34,6 +34,7 @@ Notes: If the above steps didn't work, you can simply create a new maven project
 * HTTP Interceptor for the sign up API request - *Response is saved in a HTML file.*
 * Assertion errors recovery and exception handeling - *Using hard assertions, waits and try and catch*
 * 23 automated test cases for the positive and negative scenarios 
+* Nothing is hardcoded!
 
 
 ## Componenets
@@ -63,16 +64,16 @@ There are 3 main packages in this folder.
 ## In Scope and Out of scope
 * in scope:
 All the fields validation are in scope
-	1. first Name which must start with capital letter
-	2- last Name which must start with capital letter and can’t be equal First Name
-	3- Enter valid password and check it must have capital letter, small letter, special character and there is no limit for password
-	4- Email should be unique for every user
+	- first Name which must start with capital letter
+	- last Name which must start with capital letter and can’t be equal First Name
+	- Enter valid password and check it must have capital letter, small letter, special character and there is no limit for password
+	- Email should be unique for every user
 	
 * OOS
-1- Enter valid Gmail
+- Enter valid Gmail:
 	can not verify whether the entered gmail is a valid gmail or randomly generated email
 	(the software itself can not validate this. it can only validate the correct email format "@gmail.com")
-2- After click Submit, Check verification mail sent. Click on verification link on Verification Mail sent
+- After click Submit, Check verification mail sent. Click on verification link on Verification Mail sent
 	The verification is just a step to test the main feature, sign up. It will require connecting to a third party application which is not the scope of testing.
 	This step can be achieved in the automation script by setting the registered email's status in the database as "verified" to pypass this step.
 	The email verification step's testing can be done manually in a separate test case.
