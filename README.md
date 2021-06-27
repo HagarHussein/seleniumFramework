@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 4. Pull the project into Eclipse on your machine
 5. Download chromedriver.exe and place it inside a newly created "Resources" folder inside the main hierarchy of the project
 6. Run testng.xml file
-7. open cmd and type the following command "Allure serve <allure-results folder location on your disk>"
+7. open cmd and type the following command "Allure serve [allure-results folder location on your disk]"
 
 ```
 Notes: If the above steps didn't work, you can simply create a new maven project and replace the pages and tests files inside your project
